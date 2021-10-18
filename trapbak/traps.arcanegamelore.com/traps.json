@@ -1,0 +1,697 @@
+{
+    "heading": [
+        "Watch the out, there's a kobold-crafted...",
+	"You've just stumbled into a goblin-made...",
+        "Check this inane trap, its a grung-constructed...",
+	"Like a gully dwarf, you've triggered an unsophosticated...",
+	"I can't believe you fell for a simple..."
+    ],
+
+    "response": [
+        "This doesn't fit into my dungeon.",
+        "Give me another one for the adventurers to stumble into.",
+        "My players aren't stupid enough to fall for this.",
+	"You've got to have something better than this.",
+	"I've already thrown this at my players."
+    ],
+
+    "template": [
+        "@difficulty @hidden @trap-type-1 @activation when @trap-trigger",
+        "@trap-type-1 with a trigger that has been @difficulty @hidden, @activation when @trap-trigger",
+        "@difficulty @hidden @trap-type-2",
+        "@secret hiding @monstrous-trap with a trigger that has been @difficulty @hidden, @activation when @trap-trigger",
+        "@difficulty @hidden @secret opens releasing @monstrous-trap when @trap-trigger",
+        "@monstrous-trap surge from @difficulty @hidden @secret when @trap-trigger",
+	"magical trap consisting of @trap-type-4 with a trigger that has been @difficulty @hidden, @activation when @trap-trigger"
+    ],
+
+    "trap-type-1": [
+	"@ceiling-trap",
+	"@floor-trap",
+	"@wall-trap",
+	"@hall-trap",
+	"@stair-trap"
+    ],
+
+    "trap-type-2": [
+	"@chest-trap",
+	"@door-trap",
+	"@statue-trap"
+    ],
+
+    "trap-type-3": [
+	"sylvan-trap",
+	"undead-trap",
+	"@monstrous-trap"
+    ],
+
+    "trap-type-4": [
+	"@magic-trap"
+    ],
+
+    "difficulty": [
+        "barely",
+	"inferiorly",
+        "poorly",
+	"decently",
+        "expertly",
+	"incredibly",
+	"amazingly",
+        "masterfully"
+    ],
+
+    "hidden": [
+        "hidden",
+        "disguised",
+        "concealed",
+	"cloaked",
+        "masked",
+	"veiled",
+	"camouflaged",
+	"covered"
+    ],
+
+    "ceiling-trap": [
+        "collapsing segment of roof",
+        "portion of falling ceiling",
+	"swinging door in the ceiling that drops a tiny @creature horde",
+	"swinging door in the ceiling that drops a @undead horde",
+        "falling net woven with @material barbs",
+	"scything @material blades slicing down from @transport in the ceiling",
+        "@material tipped spears stabbing down from @transport in the ceiling",
+	"@material darts raining down from @transport in the ceiling",
+        "interspersed @material swords stabbing down from @transport in the ceiling",
+        "flaming oil leaking from @transport in the ceiling",
+        "boiling oil dripping down from @transport in the ceiling",
+        "boiling tar dribbling from @transport in the ceiling",
+        "freezing mist seeping from @transport in the ceiling",
+        "@creature feces oozing from @transport in the ceiling",
+        "@liquid-type water seeping from @transport in the ceiling",
+        "lighting arcing from @material rods jutting down from the ceiling",
+        "gouts of @color flames shooting from @transport in the ceiling",
+	"enveloping @color gas seeping from @transport in the ceiling",
+	"@color colored acid showering from @transport in the ceiling",
+	"@color ice shards fire from @transport in the ceiling",
+	"@creature-trap from @transport in the ceiling"
+    ],
+
+    "floor-trap": [
+        "firetrap",
+        "pit trap",
+        "raising floor",
+        "@material spiked pit trap",
+        "frictionless floor",
+        "sliding floor",
+        "floor transmutes from stone to mud",
+	"sweeping @material blades slicing @up from @transport in the floor",
+        "@material tipped spears stabbing @up from @transport in the floor",
+        "interspersed @material swords stabbing @up from @transport in the floor",
+	"@color crystal shards lancing @up from @transport in the floor",
+        "boiling oil oozing up from @transport in the floor",
+        "freezing mist seeping from @transport in the floor",
+        "@color poison gas seeping from @transport in the floor",
+        "@liquid-type water flowing from @transport in the floor",
+        "@color water flowing from @transport in the floor",
+        "@color ichor oozing up from @transport in the floor"
+    ],
+
+    "wall-trap": [
+        "crushing wall trap",
+        "collapsing wall trap",
+        "@material tipped arrows shooting out from @transport in the @location wall",
+        "poisoned darts flying from @transport in the @location wall",
+        "@material tipped crossbow bolts firing out from @transport in the @location wall",
+        "streams of corrosive liquid that spray out from @transport in the @location wall",
+        "bursts of @color flames erupting from @transport in the @location wall",
+        "@color gas seeping from @transport in the @location wall",
+        "@location wall, slowly shifts crushing anything in the room ",
+        "metal heating @material walls on the @location wall and heat all metal",
+        "thin razor wire slice throug the room from the @location wall",
+        "Powerful @material magnets on the @location wall and attract all metal",
+        "@color Sand that pour out from @transport in the @location wall",
+        "@color water that stream out from @transport in the @location wall",
+        "mirrors of confusion that hang on the @location wall",
+        "@color bird feathers that shoot out of @transport in the @location wall",
+        "@color lightning that arc from @transport in the @location wall"
+    ],
+
+    "hall-trap": [
+	"@body-location high @material blades slicing out from @transport in the hallway walls",
+	"@body-location high @material saw blades sweeping out from @transport in the corridor walls",
+	"@material guillotine blades that descend across the entire passage",
+	"@material scythes that swing criss-cross through the hall",
+	"@material sphere that rolls down the hallway",
+        "@material posts that thrust from the corridor floor and ceiling at random intervals",
+	"@material rods that thrust from the both hallway walls at random intervals",
+	"rotating hallway trap, that turns the hallway and causes characters to fall onto @material spikes on the ceiling",
+	"crushing wall trap, compressing the hallway walls together"
+    ],
+
+    "stair-trap":[
+	"@material blades that springs from behind a depressed stair step",
+	"stair steps that fold into a slide lead to a pit with @material spikes",
+	"stair steps that rise to the ceiling, trap the adventurers, and fill with section with @color gas",
+	"powerful @color water that rushes down the steps",
+	"illusionary steps that open to pit of @color ichor",
+	"steps that decend to the level of the floor",
+	"steps that descend to reveal @material blades piercing through the step",
+	"a metal handrail that electrifies",
+	"wooden steps that splinter and break revealing a @material spiked pit",
+	"@material blades that stab out og the corner of stair steps",
+	"@material sphere that rolls down the stairwell"
+    ],
+
+    "chest-trap": [
+	"chest trap with poison @material dart, shoots from the lid when @someone opens it",
+	"chest trap with poison needle in the lock pricks @someone who opens it",
+	"mimic attacks @someone who touches it",
+	"trapped chest with @color @condition gas, envelopes the area when @someone opens it",
+	"trapped chest with explosive runes @activation when @someone touches it",
+	"chest trap with @material daggers that stab out from the bottom of the chest @activation when @someone opens it",
+	"trapped chest with @color corrosive liquid sprays from the chest when @someone searches through it",
+	"Chest trap with colorless poison coating the treasure affects anyone touching it",
+	"trapped chest with @tiny-creatures that spring from the chest @activation when someone opens it",
+	"chest trap with @color flames that shoot out of the chest @activation when @someone touches it"
+    ],
+
+    "door-trap": [
+	"trapped door with monkey-dung on a glass doorknob affects anyone who touches it",
+	"falling door trap @activation when @someone opens it",
+	"trapped door with a knocker which looks like a face and spews @color @condition gas when @anyone interacts with it",
+	"trapped door with needle in the lock @activation when @someone uses it",
+	"trapped door with @material darts that shoot from an adjacent wall @activation when @someone opens it"
+    ],
+
+    "statue-trap": [
+	"@material @statue-type trap shoots @material arrows when @someone touches it",
+	"@material @statue-type trap spits @color acids when @someone touches it",
+	"@material @statue-type that exudes @color gass when @someone touches it",
+	"@material @statue-type trap spouts @color fire when @someone touches it",
+	"@material @statue-type trap collapses when @someone touches it",
+	"@material @statue-type trap wields spinning blades when @someone touches it",
+	"@material @statue-type trap explodes when @someone touches it"
+    ],
+
+    "monstrous-trap": [
+	"@amount @creature",
+        "@amount @undead hands",
+        "a large mass of @color @slime " 
+    ],
+
+    "magic-trap": [
+	"a @shape of @magic-energy @magic-type that @effect @condition everyone and causing @element damage",
+	"a @shape of @magic-energy @magic-type that @effect eveloping the area in darkness",
+	"a @shape of @magic-energy @magic-type that @effect reversing gravity in the area",
+	"a @shape of @magic-energy @magic-type that @effect caging everyone in the area",
+	"a @shape of @magic-energy @magic-type that @effect teleporting everyone to a random location",
+	"a @shape of @magic-energy @magic-type that @effect causing everyone to become invisible",
+	"a @shape of @magic-energy @magic-type that @effect grappling everyone with @element energy",
+	"a @shape of @magic-energy @magic-type that @effect silencing everyone in the area",
+	"a @shape of @magic-energy @magic-type that @effect polymorphping everyone in the area",
+	"a @shape of @magic-energy @magic-type that @effect knocking everyone prone in the area"
+    ],
+
+    "magic-type": [
+	"runes",
+	"glyphs",
+	"sigils",
+	"symbols",
+	"writing",
+	"signs"
+    ],
+
+    "effect": [
+	"explode with @color @magic-energy energy",
+	"arc with @color @magic-energy lightning",
+	"shower with @color @magic-energy sparks",
+	"flair with @color @magic-energy energy",
+	"flash with @color @magic-energy flames",
+	"flash with a @color @magic-energy light"
+    ],
+
+    "amount": [
+	"a couple of",
+	"a pair of",
+	"a few",
+	"a significant amount of",
+	"a bunch of",
+	"a plethora of",
+	"several",
+	"numerous",
+	"plenty of",
+	"an army of",
+	"a good deal of",
+	"countless",
+	"innumerable",
+	"scores of",
+	"droves of",
+	"a horde of",
+	"multiple",
+	"a meager amount of",
+	"hardly any"
+    ],
+
+    "secret": [
+	"secret door",
+	"hidden pit",
+	"trap door",
+	"hole in the ceiling",
+	"sliding wall",
+	"loose flagstone",
+	"tattered tapestry",
+	"wardrobe that leads to another room",
+	"curtain-illusion"
+    ],
+
+    "up": [
+	"up",
+	"upward",
+	"skyward",
+	"towards the sky"
+    ],
+
+    "body-location": [
+	"neck",
+	"shoulder",
+	"waist",
+	"groin",
+	"knee",
+	"ankle"
+    ],
+
+    "condition": [
+        "Blinding",
+        "Deafening",
+        "Fatiguing",
+        "Frightening",
+        "Incapacitating",
+        "Paralyzing",
+        "Petrifying",
+        "Poisonous",
+        "Stunning"
+    ],
+
+    "statue-type": [
+	"statue",
+	"idol",
+	"statuette",
+	"effigy",
+	"Sculpture",
+	"graven image"
+    ],
+
+    "transport": [
+	"holes",
+	"cracks",
+	"openings",
+	"gaps",
+	"spaces",
+	"breaks",
+	"orifices",
+	"breaches"
+    ],
+
+    "location": [
+	"nearby",
+	"far",
+	"adjacent",
+	"opposite",
+	"opposing",
+	"facing",
+	"close",
+	"neighboring",
+	"abutting",
+	"adjoining"
+    ],
+
+    "liquid-type": [
+	"fetid",
+	"foul-smelling",
+	"malodorous",
+	"acrid",
+	"noxious",
+	"rank-smelling"
+    ],
+
+    "element": [
+	"fire",
+	"Acid",
+	"lightning",
+	"radiance",
+	"thunder",
+	"cold",
+	"poison",
+	"necrotic",
+	"force"
+    ],
+
+    "magic-energy": [
+	"arcane",
+	"eldritch",
+	"divine",
+	"supernatural",
+	"demonic",
+	"astral",
+	"planar",
+	"infernal",
+	"sylvan"
+    ],
+
+    "shape" : [
+	"circle",
+	"triangle",
+	"square",
+	"rectangle",
+	"trapazoid",
+	"pentagon",
+	"hexagon",
+	"heptagon",
+	"octogon",
+	"nonogon",
+	"decagon"
+    ],
+
+    "color": [
+	"chestnut",
+	"red-orange",
+	"burnt-sienna",
+	"brown",
+	"orange",
+	"burnt",
+	"copper",
+	"tangerine",
+	"desert-sand",
+	"raw-sienna",
+	"tan",
+	"peach",
+	"yellow-orange",
+	"yellow",
+	"green-yellow",
+	"spring-green",
+	"olive-green",
+	"yellowgGreen",
+	"Forest-Green",
+	"Sea-Green",
+	"Green",
+	"Shamrock",
+	"Jungle-Green",
+	"Pine-Green",
+	"Aquamarine",
+	"Turquoise-Blue",
+	"Sky-Blue",
+	"Blue-Green",
+	"Cerulean",
+	"Cornflower",
+	"Midnight-Blue",
+	"Navy-Blue",
+	"Blue",
+	"Periwinkle",
+	"Indigo",
+	"Blue-Violet",
+	"Royal-Purple",
+	"Violet",
+	"Vivid-Violet",
+	"Fuchsia",
+	"Plum",
+	"Magenta",
+	"Orchid",
+	"Red-Violet",
+	"Eggplant",
+	"Cerise",
+	"Lavender",
+	"Violet-Red",
+	"Pink",
+	"Maroon",
+	"Red",
+	"Mauve",
+	"Scarlet",
+	"Salmon",
+	"White",
+	"Gray",
+	"Black"
+    ],
+
+    "material": [
+	"sharktooth",
+	"bone",
+	"dragon bone",
+	"wood",
+	"darkwood",
+	"jade",
+	"marble",
+	"obsidian",
+	"stone",
+	"iron",
+	"steel",
+	"silver",
+	"brass",
+	"bronze",
+	"arandur",
+	"abyssal bloodiron",
+	"alchemical silver",
+	"mithril",
+	"orichalcum",
+	"adamantine",
+	"astral driftmetal",
+	"aururum",
+	"baatorian steel",
+	"baatorian green steel",
+	"blended quartz",
+	"blood glass",
+	"blue ice",
+	"bronzewood",
+	"byeshk",
+	"calomel",
+	"chitin",
+	"cold iron",
+	"crysteel",
+	"darkleaf",
+	"deep coral",
+	"deep crystal",
+	"dendritic",
+	"densewood",
+	"dlarun",
+	"duskwood",
+	"elukian clay",
+	"entropium",
+	"fever iron",
+	"firebrass",
+	"flametouched iron",
+	"fyrite",
+	"frystalline",
+	"gehennan morghuth iron",
+	"githsilver",
+	"gloomsteel",
+	"green starmetal",
+	"hizagkuur",
+	"ironbark",
+	"livewood",
+	"pandemonic silver",
+	"pearl steel",
+	"purple sournlode",
+	"rimfire ice",
+	"riverine",
+	"serren",
+	"soarwood",
+	"solarian truesteel",
+	"starmetal",
+	"stygian ice",
+	"targath",
+	"thinaun",
+	"truesteel",
+	"urdukar"
+    ],
+
+    "creature": [
+	"@normal-creature",
+	"@tiny-creature",
+	"@undead"
+    ],
+
+    "slime": [
+        "ooze",
+        "slime",
+        "jelly"
+    ],
+
+    "normal-creature": [
+	"basilisks",
+	"centaurs",
+	"chimeras",	
+	"cockatrices",
+	"djinni",
+	"dragons",	
+	"dryads",
+	"dwarfs",
+	"elfs",
+	"gargoyles",
+	"giants",
+	"gnolls",
+	"gnomes",
+	"goblins",
+	"gorgons",
+	"griffons",
+	"hippogriffs",
+	"hobgoblins",
+	"hydras",
+	"kobolds",
+	"manticores",
+	"medusas",
+	"minotaurs",
+	"nixies",
+	"ogres",
+	"orcs",
+	"pegasi",
+	"pixies",
+	"purple worms",
+	"rocs",
+	"trolls",
+	"unicorns",
+	"wyverns",
+	"bugbears",
+	"carrion crawlers",
+	"displacer beasts",
+	"doppelgangers",
+	"dragons",
+	"storm giants",
+	"giant ticks",
+	"giant slugs",
+	"harpies",
+	"hell hounds",
+	"lammasus",	
+	"lizard men",
+	"wererats",
+	"ogre magi",
+	"owl bears",
+	"phase spiders",
+	"rust monster",
+	"salamanders",
+	"stirges",
+	"umber hulks",
+	"giant beetles",
+	"ixitxachithi",
+	"brain moles",
+	"couatls",
+	"ki-rin"
+    ],
+
+    "tiny-creature": [
+        "animated objects",
+	"blood wasps",
+	"quasits",
+	"imps",
+	"grig",
+	"homunculi",
+	"lizards",
+	"monkey tails",
+	"centipedes",
+	"scorpions",
+	"spiders",
+	"rats",
+	"ravens",
+	"tiny skeletons",
+	"vipers",
+	"stirges",
+	"swarm of bees",
+	"swarm of beetles",
+	"swarm of black flies",
+	"swarm of crawling insects",
+	"flying snakes",
+	"poison frogs",
+	"black spitter geckos",
+	"bloodseekers",
+	"card golems",
+	"chickens",
+	"corpse worms",
+	"crawling arms",
+	"crystal eye familiars",
+	"doll golems",
+	"fiendish hawks",
+	"fiendish ravens",
+	"fire lizards",
+	"flashing ropes",
+	"floating skulls",
+	"furry salamanders",
+	"grigs",
+	"hairy lizards",
+	"impish polymorphers",
+	"leeches",
+	"writhing worms"
+    ],
+
+    "undead": [
+	"ghast",
+	"ghoul",
+	"shadow",
+	"skeleton",
+	"wight",
+	"wraith",
+	"zombie"
+    ],
+
+    "activation": [
+	"goes off",
+	"activates",
+	"triggers",
+	"trips"
+    ],
+
+    "trap-trigger": [
+	"@someone steps into the area",
+        "@someone walks around, outside of a @shape of glowing runes",
+	"@someone walks under a hidden rune",
+	"@someone steps on @something-to-press",
+	"@someone presses @something-to-press",
+	"@someone opens @something-to-open",
+	"@someone closes @something-to-open",
+	"@someone picks up treasure",
+        "@something-to-break is broken",
+	"@someone pulls on a lever",
+	"@someone turns a knob",
+	"@someone pulls out a weapon",
+	"@someone utters the wrong phrase",
+	"@someone speaks",
+	"sound is heard",
+	"too much weight enters",
+	"too many people enter",
+	"a dead body is searched"
+    ],
+
+    "someone": [
+	"someone",
+	"anyone",
+	"@race"
+    ],
+
+    "race": [
+	"a dragonborn",
+	"a dwarf",
+	"a half-elf or elf",
+	"a gnome",
+	"a halfling",
+	"a half-ork or ork",
+	"a human",
+	"a tiefling"
+    ],
+
+    "something-to-press": [
+	"a pressure plate",
+	"a button"
+    ],
+
+    "something-to-open": [
+	"a door",
+	"a trapdoor",
+	"a cabinet",
+	"a chest",
+	"a window",
+	"a bag"
+    ],
+
+    "something-to-break": [
+	"a beam of light",
+	"a thin wire",
+	"a wisp of smoke"
+    ]
+
+}
